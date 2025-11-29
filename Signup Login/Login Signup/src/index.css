@@ -108,3 +108,27 @@ form .heading{
   .login-form{
     margin: auto;
   }
+
+
+
+  nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+  color: #00e6b8;
+  transform: translateY(-2px);
+}
+
+/* Active link style */
+nav ul li a.active {
+  color: #00e6b8;
+  border-bottom: 2px solid #00e6b8;
+  padding-bottom: 4px;
+}
