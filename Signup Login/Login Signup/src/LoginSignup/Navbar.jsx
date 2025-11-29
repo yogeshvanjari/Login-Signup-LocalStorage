@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Navbar()
 {
   return(
@@ -7,8 +8,8 @@ export default function Navbar()
             <ul>
                <li>
                <a className=''> Welcome Page !</a>
-                <a>Login</a>
-                <a>Signup</a>
+                <Link to="/login">Login</Link>
+                <Link to="/">Signup</Link>
                </li>
 
             </ul>

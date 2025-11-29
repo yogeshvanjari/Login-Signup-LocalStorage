@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function Login()
 {
@@ -63,7 +64,7 @@ export default function Login()
             <div className='account'>
               <input type='email' placeholder='Email' name="email" onChange={handleInput}/>
                 <input type='password' placeholder='Password' name="password" onChange={handleInput}/>
-                <p>Create an account <a href="./">SignUp</a> </p>
+                <p>Create an account <Link to="/">Signup</Link> </p>
             </div>
             <button>LogIn</button>
         </form>

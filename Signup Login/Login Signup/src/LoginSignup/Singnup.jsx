@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom'
+import { Link } from "react-router-dom";
 export default function Singnup()
 {
  
@@ -53,7 +54,8 @@ export default function Singnup()
                 <input type='text' placeholder='Name' name="name" onChange={handleInput}/>
                 <input type='email' placeholder='Email' name="email" onChange={handleInput}/>
                 <input type='password' placeholder='Password' name="password" onChange={handleInput}/>
-                 <p>Already have an account ? <a href='./Login'>Login</a></p>
+                <p>  Already have an account? <Link to="/login">Login</Link></p>
+
                 </div>
                 <button>SignUp</button>
             </form>
